@@ -1,0 +1,16 @@
+{
+    "name": "smhdhsn/design-pattern-principals",
+    "description": "Design pattern principals with explanation and PHP sample code.",
+    "autoload": {
+        "psr-4": {
+            "Patterns\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mahdi",
+            "email": "m2hdtl@gmail.com"
+        }
+    ],
+    "require": {}
+}
