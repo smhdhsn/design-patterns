@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Design Patterns" src="https://raw.githubusercontent.com/SMhdHsn/SMhdHsn/master/Assets/Images/design_patterns.jpeg">
+  <img alt="Design Patterns" src="https://raw.githubusercontent.com/SMhdHsn/SMhdHsn/master/Assets/Images/DesignPatterns.jpeg">
 </p>
 
 ## Design Patterns
