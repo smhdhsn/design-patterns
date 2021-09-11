@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Strategy\Protocols;
 
-/**
- * The ability to meow.
- */
 interface Meowable
 {
+    /**
+     * The ability to meow.
+     */
     public function meow(): string;
 }

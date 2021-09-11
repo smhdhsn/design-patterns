@@ -4,13 +4,6 @@ namespace Patterns\Behavioral\Strategy\Animals;
 
 use Patterns\Behavioral\Strategy\Protocols\{Displayable, Quackable, Flyable};
 
-/**
- * Duck class.
- * 
- * Has to be able to be displayed.
- * Has to be able to quack.
- * Has to be able to fly.
- */
 class Duck implements Displayable, Quackable, Flyable
 {
     public Displayable $displaying;

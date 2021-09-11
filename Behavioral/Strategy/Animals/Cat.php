@@ -4,13 +4,6 @@ namespace Patterns\Behavioral\Strategy\Animals;
 
 use Patterns\Behavioral\Strategy\Protocols\{Displayable, Meowable, Jumpable};
 
-/**
- * Cat class.
- * 
- * Has to be able to be displayed.
- * Has to be able to meow.
- * Has to be able to jump.
- */
 class Cat implements Displayable, Meowable, Jumpable
 {
     public Displayable $displaying;

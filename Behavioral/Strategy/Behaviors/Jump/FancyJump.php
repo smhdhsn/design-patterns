@@ -4,11 +4,11 @@ namespace Patterns\Behavioral\Strategy\Behaviors\Jump;
 
 use Patterns\Behavioral\Strategy\Protocols\Jumpable;
 
-/**
- * Type of jump.
- */
 class FancyJump implements Jumpable 
 {
+    /**
+     * Type of jump.
+     */
     public function jump(): string
     {
         return "I'm jumping fancily.";

@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Strategy\Protocols;
 
-/**
- * The ability to be displayed.
- */
 interface Displayable
 {
+    /**
+     * The ability to be displayed.
+     */
     public function display(): string;
 }

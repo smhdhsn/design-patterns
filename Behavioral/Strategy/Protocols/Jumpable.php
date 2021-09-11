@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Strategy\Protocols;
 
-/**
- * The ability to jump.
- */
 interface Jumpable
 {
+    /**
+     * The ability to jump.
+     */
     public function jump(): string;
 }

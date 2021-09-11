@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Strategy\Protocols;
 
-/**
- * The ability to quack.
- */
 interface Quackable
 {
+    /**
+     * The ability to quack.
+     */
     public function quack(): string;
 }

@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Strategy\Protocols;
 
-/**
- * The ability to fly.
- */
 interface Flyable
 {
+    /**
+     * The ability to fly.
+     */
     public function fly(): string;
 }
