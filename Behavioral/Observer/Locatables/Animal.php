@@ -34,7 +34,9 @@ class Animal implements Locatable
      */
     public function removeLocator(Locator $locator): void
     {
-        // bla bla bla
+        if(($key = array_search($locator, $this->locators, true))) {
+            unset($this->locators[$key]);
+        }
     }
 
     /**
