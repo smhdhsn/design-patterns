@@ -2,21 +2,21 @@
 
 namespace Patterns\Structural\Decorator\Decorators;
 
-use Patterns\Structural\Decorator\Abstracts\AbstractAddonDecorator;
+use Patterns\Structural\Decorator\Abstracts\{AbstractAddonDecorator, AbstractBeverage};
 
 class SprinklesDecorator extends AbstractAddonDecorator
 {
     /**
      * Instance of a beverage or a decorator of a beverage.
      */
-    public $beverage;
+    public AbstractBeverage $beverage;
 
     /**
      * Cost of Sprinkles addon.
      */
     CONST COST = 2;
 
-    public function __construct($beverage)
+    public function __construct(AbstractBeverage $beverage)
     {
         $this->beverage = $beverage;
     }
