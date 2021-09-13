@@ -11,7 +11,7 @@ class DonutFactory implements Creator
     /**
      * Creating Order.
      */
-    public function order(string $item, string $size): Orderable
+    public function createOrder(string $item, string $size): Orderable
     {
         switch (strtolower($item)) {
             case 'chocolate':

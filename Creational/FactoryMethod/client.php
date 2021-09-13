@@ -32,8 +32,8 @@ Donut
     Strawberry [S, M, L]
 */
 
-$coffee = (new CoffeeFactory)->order('Espresso', 'M');
-$donut = (new DonutFactory)->order('Chocolate', 'L');
+$coffee = (new CoffeeFactory)->createOrder('Espresso', 'M');
+$donut = (new DonutFactory)->createOrder('Chocolate', 'L');
 
 echo 'Mahdi ordered a ' . $coffee->getSize() . ' size ' . $coffee->getName() . PHP_EOL;
 echo 'Mahdi ordered a ' . $donut->getSize() . ' size ' . $donut->getName() . PHP_EOL;

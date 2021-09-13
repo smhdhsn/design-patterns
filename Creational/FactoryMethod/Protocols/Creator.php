@@ -7,5 +7,5 @@ interface Creator
     /**
      * Factory must be able to serve Coffee|Donut.
      */
-    public function order(string $item, string $size): Orderable;
+    public function createOrder(string $item, string $size): Orderable;
 }
