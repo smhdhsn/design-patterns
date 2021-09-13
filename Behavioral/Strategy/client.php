@@ -1,5 +1,13 @@
 <?php
 
+/** Autoloading classes */
+include_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+####################################
+#  Actual client code starts here  #
+####################################
+
+use Patterns\Behavioral\Strategy\Animals\{Duck, Cat};
 use Patterns\Behavioral\Strategy\Behaviors\{
     Display\SimpleDisplay,
     Display\FancyDisplay,
@@ -8,18 +16,6 @@ use Patterns\Behavioral\Strategy\Behaviors\{
     Jump\FancyJump,
     Fly\SimpleFly
 };
-
-use Patterns\Behavioral\Strategy\Animals\{
-    Duck, 
-    Cat
-};
-
-/** Autoloading classes */
-include_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
-
-/***********************************/
-/** Actual client code starts here */
-/***********************************/
 
 CONST SPACE = "\x20";
 CONST EOL = PHP_EOL;
