@@ -2,11 +2,11 @@
 
 namespace Patterns\Behavioral\Iterator\Iterables;
 
-use Patterns\Behavioral\Iterator\Protocols\{ItemIterable, ItemIterator};
+use Patterns\Behavioral\Iterator\Protocols\{Traversable, Traverser};
 use Patterns\Behavioral\Iterator\Iterators\BookListIterator;
 use Patterns\Behavioral\Iterator\Items\Book;
 
-class BookList implements ItemIterable
+class BookList implements Traversable
 {
     /**
      * List of books.
@@ -16,7 +16,7 @@ class BookList implements ItemIterable
     /**
      * Getting book iterator.
      */
-    public function getIterator(): ItemIterator
+    public function getIterator(): Traverser
     {
         return new BookListIterator($this);
     }

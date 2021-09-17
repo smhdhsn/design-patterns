@@ -2,7 +2,7 @@
 
 namespace Patterns\Behavioral\Iterator\Protocols;
 
-interface ItemIterator
+interface Traverser
 {
     /**
      * Every iterator must present a way to the client for them to check the weather if

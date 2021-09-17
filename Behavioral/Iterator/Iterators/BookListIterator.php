@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Iterator\Iterators;
 
-use Patterns\Behavioral\Iterator\Protocols\{ItemIterator, Item};
+use Patterns\Behavioral\Iterator\Protocols\{Traverser, Item};
 use Patterns\Behavioral\Iterator\Iterables\BookList;
 
-class BookListIterator implements ItemIterator
+class BookListIterator implements Traverser
 {
     /**
      * Book collection's instance.

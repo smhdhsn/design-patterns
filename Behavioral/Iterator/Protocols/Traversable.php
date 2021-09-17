@@ -2,10 +2,10 @@
 
 namespace Patterns\Behavioral\Iterator\Protocols;
 
-interface ItemIterable
+interface Traversable
 {
     /**
      * Every iterable collection of items must have a specific iterator.
      */
-    public function getIterator(): ItemIterator;
+    public function getIterator(): Traverser;
 }
