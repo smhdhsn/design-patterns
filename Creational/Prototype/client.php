@@ -17,11 +17,6 @@ $mahdiHomework = new Math(
 
 echo $mahdiHomework->getHomeworkPaper();
 
-/***************/
-/** Seperator */
-/***************/
-echo PHP_EOL;
-
 /** Adam copying Mahdi's homework which is of the same type but with different content */
 $adamHomework = clone $mahdiHomework;
 
