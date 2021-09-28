@@ -7,10 +7,9 @@ include_once dirname(__DIR__, 2) . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SE
 #  Actual client code starts here  #
 ####################################
 
-use Patterns\Structural\Proxy\Proxies\HumanResources;
+use Patterns\Structural\Proxy\Proxies\FancyMessenger;
+use Patterns\Structural\Proxy\Subject\Messenger;
 
-$alex = new HumanResources;
+$messenger = new FancyMessenger(new Messenger);
 
-$alex->warn('Adam Schindler');
-$alex->warn('Adam Schindler');
-$alex->warn('Adam Schindler');
+echo $messenger->getMessage();
